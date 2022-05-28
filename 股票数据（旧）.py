@@ -5,6 +5,7 @@
 # @Software: PyCharm
 #From python书籍例子
 import pandas as pd
+import tushare as ts
 tianye = ts.get_k_data(code= '600807',start='1994-01-01')
 print(tianye)
 tianye.to_csv('tianye.csv')
